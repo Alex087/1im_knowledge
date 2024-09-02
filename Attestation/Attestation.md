@@ -7,12 +7,8 @@ QER\CalculateRiskIndex
 ## Attestation structure
 
 *Attestation types* include Attestation procedures and group them.
-*Attestation procedures* determine base attestation object.  
-Attestation procedures определяют базовый объект для аттестации, например - членство в Business role (объект PersonInOrg). В них задается отображение записи аттестации на портале - можно указать отображаемые свойства и колонки для группировки. 
-Значение Related object указывает на свяхь с другой таблицей, через указание XObjectKey ($FK(UID_ADSAccount).XObjectKey$), поля которого мы указываем в Grouping column 1 и т.п.
-
-
-
+*Attestation procedures* determine base attestation object. For example Business role memberships (PersonInOrg object).
+In the object set display attestation record on Portal. You can set displayed properties and columns for groupping. Value Related object indicates link to other table over set XObjectKey ($FK(UID_ADSAccount).XObjectKey$). Fields XObjectKey we set in Grouping columns. 
 
 - [Attestation](#attestation)
   - [Enable/Disable RiskIndex](#enabledisable-riskindex)
