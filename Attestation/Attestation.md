@@ -26,8 +26,25 @@ In Attestation policy sets Apprval Policy, which include Approval Workflow with 
 
 https://support.oneidentity.com/technical-documents/identity-manager/8.1.2/attestation-administration-guide/18
 
+## Attestation employee myself  
+
+If employee wants attestation own in Workflow need check "Approval by affected employee"
+
+## Recertifying existing users
+**IMPORTANT:** Access to connected target systems may possibly be denied to One Identity Manager users as a result of recertification. You can configure this behavior to meet your company’s requirements. Read the following section thoroughly before you use the recertification function.
+One Identity Manager provides an attestation policy for performing cyclical attestation of existing users allowing companies to regularly test and authorize employee master data stored in the One Identity Manager database. Cyclical attestation is triggered through a scheduled task. This resets the certification status for all employees stored in the database. One Identity Manager uses the same procedure for this as for attesting new users. The case is referred to as recertification.
+Result of recertification  
+
+  • Certified, activated employees who can access all entitlements assigned to them in One Identity Manager and the connected target systems.  
+Company resources are inherited. Account definitions are assigned to internal employees.  
+**OR**  
+  • Denied and permanently deactivated employees.  
+Disable employees cannot log in to One Identity Manager tools. Company resources are not inherited. Account definitions are not automatically assigned. User accounts associated with the employee are also locked or deleted. You can customize the behavior to meet your requirements.
+
+From <https://support.oneidentity.com/technical-documents/identity-manager/8.1.2/attestation-administration-guide/38#TOPIC-1363650>
 
 - [Attestation](#attestation)
   - [Enable/Disable RiskIndex](#enabledisable-riskindex)
   - [Attestation structure](#attestation-structure)
-
+  - [Attestation employee myself](#attestation-employee-myself)
+  - [Recertifying existing users](#recertifying-existing-users)
